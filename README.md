@@ -15,3 +15,7 @@ Added REST API functionalities at the end of the project:
 
 ## Initial set-up
 Execute /sql-scripts scripts in your local database server to create project's database user and database with some data.
+
+## GET /api/customers
+Get a list with all the customers.  
+Commit: *Get all*
