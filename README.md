@@ -1,10 +1,12 @@
 # rest-crm
-Adding REST API to web CRM application
+Create REST API to manage CRM database
 
-Academic purposes project consisting in adding REST API functionalities to a CRM Spring MVC project.  
+Academic purposes project consisting in creating REST API functionalities from a former CRM Spring MVC project.   
+The base project consists of a CRM database (MySQL), and implemented DAO and Services to interact with database.  
 Base source code: http://www.luv2code.com/spring-crm-rest-demo
 
 ## Summary
+Added REST API functionalities at the end of the project:
   - Get a list of customers
   - Get a single customer by id
   - Add a new customer
@@ -12,4 +14,4 @@ Base source code: http://www.luv2code.com/spring-crm-rest-demo
   - Delete a customer
 
 ## Initial set-up
-Execute /sql-scripts scripts in your local database server to create project user and database with some data.
+Execute /sql-scripts scripts in your local database server to create project's database user and database with some data.
