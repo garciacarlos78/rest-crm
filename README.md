@@ -29,3 +29,36 @@ Added exception handling:
   - Bad format parameter (customerId > *Integer.MAX_VALUE*, customerId **instanceof** String)  
   
 Commit: *Get customer*  
+
+## POST /api/customers
+Create a new customer using the data sent in the JSON body.  
+    
+JSON structure: { "firstName" : String, "lastName" : String, "email": String }	
+  
+Added exception handling for introduced customer id (field *customerId* must be 0 or non existing in the request body).  
+  
+Commit: *Post customer*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
