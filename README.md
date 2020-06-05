@@ -10,3 +10,6 @@ Base source code: http://www.luv2code.com/spring-crm-rest-demo
   - Add a new customer
   - Update a customer
   - Delete a customer
+
+## Initial set-up
+Execute /sql-scripts scripts in your local database server to create project user and database with some data.
