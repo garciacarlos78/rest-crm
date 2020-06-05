@@ -17,10 +17,14 @@ Added REST API functionalities at the end of the project:
 Execute /sql-scripts scripts in your local database server to create project's database user and database with some data.
 
 ## GET /api/customers
+Commit: *Get all*  
+
 Get a list with all the customers.  
-Commit: *Get all*
+
 
 ## GET /api/customers/{customerId}
+Commit: *Get customer*  
+  
 Get the customer with id *customerId*.  
 
 Added exception handling:
@@ -28,16 +32,38 @@ Added exception handling:
   - Invalid customer id (*-Integer.MIN_VALUE* < customerId < 1)
   - Bad format parameter (customerId > *Integer.MAX_VALUE*, customerId **instanceof** String)  
   
-Commit: *Get customer*  
+  
 
 ## POST /api/customers
+Commit: *Post customer*  
+
 Create a new customer using the data sent in the JSON body.  
     
 JSON structure: { "firstName" : String, "lastName" : String, "email": String }	
   
 Added exception handling for introduced customer id (field *customerId* must be 0 or non existing in the request body).  
   
-Commit: *Post customer*
+
+
+## PUT /api/customers
+Commit: *Put customer*
+
+Modify an existing customer using the data sent in the JSON body.  
+  
+JSON structure: { "id": int, "firstName" : String, "lastName" : String, "email": String }
+
+Added new *CustomerNotFoundException* constructor: it only needs the customer id to create the message.
+  - Before: `throw new CustomerNotFoundException("Customer with id not found - " + customerId);`
+  - Now: `throw new CustomerNotFoundException(customerId);`  
+    
+
+
+
+
+
+
+
+
 
 
 
