@@ -56,35 +56,7 @@ Added new *CustomerNotFoundException* constructor: it only needs the customer id
   - Before: `throw new CustomerNotFoundException("Customer with id not found - " + customerId);`
   - Now: `throw new CustomerNotFoundException(customerId);`  
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## DELETE /api/customers/{customerId}
+Commit: *Delete customer*  
+  
+Delete the customer with id *customerId*.
