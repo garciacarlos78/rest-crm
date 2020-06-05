@@ -19,3 +19,13 @@ Execute /sql-scripts scripts in your local database server to create project's d
 ## GET /api/customers
 Get a list with all the customers.  
 Commit: *Get all*
+
+## GET /api/customers/{customerId}
+Get the customer with id *customerId*.  
+
+Added exception handling:
+  - Customer not found
+  - Invalid customer id (*-Integer.MIN_VALUE* < customerId < 1)
+  - Bad format parameter (customerId > *Integer.MAX_VALUE*, customerId **instanceof** String)  
+  
+Commit: *Get customer*  
