@@ -31,7 +31,7 @@ public class CRMRestController {
 		Customer customer = service.getCustomer(customerId);
 		if (customer==null) 
 			throw new CustomerNotFoundException("User with id not found - " + customerId);
-		return service.getCustomer(customerId);
+		return customer;
 	}
 
 	private void checkIdValue(int customerId) {

@@ -41,8 +41,48 @@ public class MyExceptionHandler {
 		
 		return new ResponseEntity<ErrorJson>(error, HttpStatus.BAD_REQUEST);
 	}
-
 	
-	
-	
+	@ExceptionHandler
+	public ResponseEntity<ErrorJson> genericException (Exception ex) {
+		
+		ErrorJson error = new ErrorJson(
+								HttpStatus.BAD_REQUEST.value(),
+								ex.getMessage(),
+								System.currentTimeMillis());
+		
+		return new ResponseEntity<ErrorJson>(error, HttpStatus.BAD_REQUEST);
+	}	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
