@@ -11,8 +11,9 @@ Added REST API functionalities at the end of the project:
   - Get a single customer by id
   - Add a new customer
   - Update a customer
-  - Delete a customer
-
+  - Delete a customer  
+  
+REST API address: http://localhost:8080/spring-crm-rest/api/customers
 ## Initial set-up
 Execute /sql-scripts scripts in your local database server to create project's database user and database with some data.
 
